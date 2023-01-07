@@ -65,6 +65,7 @@ function App() {
 
   return (
     <div
+      className="app"
       style={{
         maxWidth: "800px",
         display: "flex",
@@ -72,9 +73,10 @@ function App() {
         gap: "2rem",
         margin: "0 auto",
         alignItems: "center",
+        width: "100%",
       }}
     >
-      <div style={{ fontSize: "2rem", textAlign: "center" }}>
+      <div style={{ fontSize: "2rem", textAlign: "center", color: "white" }}>
         {isWinner && "Winner! - Refresh to try again"}
         {isLoser && "Nice Try - Refresh to try again"}
       </div>
